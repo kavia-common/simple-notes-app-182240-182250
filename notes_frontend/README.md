@@ -22,11 +22,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The frontend calls a backend Notes API. Configure the base URL with the environment variable:
 
-- `REACT_APP_API_BASE` (default: `http://localhost:5000`)
+- `REACT_APP_API_BASE` (default: `http://localhost:5001/api`)
 
 Create `.env.development` at project root if needed:
 ```
-REACT_APP_API_BASE=http://localhost:5000
+REACT_APP_API_BASE=http://localhost:5001/api
 ```
 
 ### `npm test`
