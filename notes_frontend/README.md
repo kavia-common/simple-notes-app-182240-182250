@@ -18,6 +18,17 @@ In the project directory, you can run:
 Runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+### Configure API Base URL
+
+The frontend calls a backend Notes API. Configure the base URL with the environment variable:
+
+- `REACT_APP_API_BASE` (default: `http://localhost:5000`)
+
+Create `.env.development` at project root if needed:
+```
+REACT_APP_API_BASE=http://localhost:5000
+```
+
 ### `npm test`
 
 Launches the test runner in interactive watch mode.
@@ -31,27 +42,12 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ### Colors
 
-The main brand colors are defined as CSS variables in `src/App.css`:
-
-```css
-:root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
-}
-```
+The main brand colors and component styles are defined as CSS variables/classes in `src/App.css`.
 
 ### Components
 
-This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
-
-Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
+- NoteForm (`src/components/NoteForm.jsx`)
+- NotesList (`src/components/NotesList.jsx`)
 
 ## Learn More
 
